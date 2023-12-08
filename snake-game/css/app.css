@@ -1,0 +1,38 @@
+body{
+    background-color: #0c1c29;
+}
+
+canvas{
+    position: absolute;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #042b39;
+}
+
+.button{
+    display: none;
+}
+
+@media(max-width: 750px) {
+    .button{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        text-align: center;
+        font-family: 'teko';
+        color: white;
+        font-size: 2em;
+        position: absolute;
+        width: 800px;
+        height: 50px;
+        border-radius: 50%;
+        inset: 50%;
+        top: calc(50% + 300px);
+        transform: translate(-50%, 0%);
+    }
+    
+    .button span{
+        border: 2px solid white;
+    }
+}
